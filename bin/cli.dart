@@ -1,5 +1,5 @@
-import 'package:cli/cli.dart' as cli;
+import 'arg_parse.dart' show parseArgs;
 
-void main(List<String> arguments) {
-  print('Hello world: ${cli.calculate()}!');
+void main(List<String> arguments) async {
+  await parseArgs(arguments);
 }
